@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+.header{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 221, 227);
+  display: flex;
+  justify-content: space-between;
+  .left-header{
+    &__title{
+      margin-left: 60px;
+      line-height: 60px;
+      font-size: 29px;
+      display: inline-block;
+      color: rgba(17, 17, 17, 0.582);
+      font-family: cursive;
+    }
+  }
+  .right-header{
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 15px 40px 15px 0px;
+    font-size: 20px;
+    
+    &__title{
+    
+    }
+  }
+}
+.main_space{
+  background-image: image-url("wedding-photo.jpg");
+  height: 100vh;
+  .main-menu{
+    text-align: center;
+    line-height: 100vh;
+    font-size: 40px;
+    color: white;
+    border: solid;
+    &__name{
+      display: inline-block;
+  
+    }
+  }
+}
