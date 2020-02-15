@@ -1,0 +1,22 @@
+.main
+  .header
+    .left-header
+      %h3.left-header__title
+        WEDDING PAGE
+    %ul.right-header
+      %li.right-header__title
+        = link_to edit_user_path(current_user.id) do
+          EDIT  
+  .choice
+    = link_to "式場", halls_path(anchor: "hall"), class: 'hall'
+    = link_to "料理", halls_path(anchor: "dish"), class: 'dish'
+    = link_to "プラン", halls_path(anchor: "plan"), class: 'plan'
+    = link_to "ケーキ", halls_path(anchor: "cake"), class: 'cake'
+    = link_to "費用チェック", halls_path(anchor: "cost"), class: 'cost'
+  .slider
+    %h2.one#hall
+    %h2.two#dish
+    %h2.three#plan
+    %h2.four#cake
+    %h2.five#cost
+

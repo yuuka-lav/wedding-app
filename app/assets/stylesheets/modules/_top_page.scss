@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .header{
   height: 60px;
   width: 100%;
@@ -20,7 +21,6 @@
   .right-header{
     padding: 0px 20px;
     box-sizing: border-box;
-    font-family: cursive;
     margin: 15px 40px 15px 0px;
     font-size: 20px;  
     &__title{
@@ -29,24 +29,66 @@
         padding: 5px 5px;
         border: 1px solid rgb(100, 99, 99);
         color: rgba(27, 27, 27, 0.794);
-      }
-      
+      }  
     }
-    
   }
 }
-.main_space{
-  background-image: image-url("wedding-photo.jpg");
-  height: 100vh;
-  .main-menu{
+.hall{
+  overflow: auto;
+  .hall__name{
+    margin: 50px 0 5px 150px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgba(0, 174, 255, 0.507);
+  }
+  .hall__photo{
+    background-image: image-url("wedding-6.jpg");
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    
+  }
+  .hall__place{
+    margin-top: 5px;
     text-align: center;
-    line-height: 100vh;
-    font-size: 40px;
-    color: white;
-    border: solid;
-    &__name{
-      display: inline-block;
+    font-size: 15px;
+  }
   
+  .hall__link{
+    text-align: center;
+    a{
+      color: rgb(66, 83, 238);
+    }
+  }
+}
+
+.hall-1{
+  overflow: auto;
+  .hall-1__name{
+    margin: 50px 0 5px 150px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgba(0, 174, 255, 0.507);
+  }
+  .hall-1__photo{
+    background-image: image-url("wedding-8.jpg");
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    
+  }
+  .hall-1__place{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .hall-1__link{
+    text-align: center;
+    a{
+      color: rgb(66, 83, 238);
     }
   }
 }
