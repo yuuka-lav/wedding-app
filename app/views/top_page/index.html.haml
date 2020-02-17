@@ -7,24 +7,16 @@
       %li.right-header__title
         = link_to edit_user_path(current_user.id) do
           EDIT
-.hall
-  .hall__name
-    < Wedding大阪 >
-  .hall__photo
-
-  .hall__place
-    ｜ 専門式場 / 大阪府 ｜ 収容人数：20 ~ 120人
-  .hall__link
-    = link_to halls_path() do
-      HPをみる
-
-.hall-1
-  .hall-1__name
-    < wedding難波 >
-  .hall-1__photo
-
-  .hall-1__place
-    ｜ ホテル / 大阪府 ｜ 収容人数：80 ~ 200人
-  .hall-1__link
-    = link_to halls_path() do
-      HPをみる
+  .choice
+    = link_to "式場", top_page_index_path(anchor: "hall"), class: 'hall'
+    = link_to "料理", top_page_index_path(anchor: "dish"), class: 'dish'
+    = link_to "プラン", top_page_index_path(anchor: "plan"), class: 'plan'
+    = link_to "ケーキ", top_page_index_path(anchor: "cake"), class: 'cake'
+    = link_to "費用チェック", top_page_index_path(anchor: "cost"), class: 'cost'
+  .slider
+    %h2.one#hall
+    %h2.two#dish
+    %h2.three#plan
+    %h2.four#cake
+    %h2.five#cost
+      -# = render partial: "top_page/cost", locals: { cart: @cart}

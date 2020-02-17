@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+  <% if @hall.like_user(current_user.id) %>
+    <%= button_to user_hall_like_path(like, hall_id: hall.id), method: :delete, id: "like-button", remote: true do %>
+      <%= image_tag("icon_red_heart.svg") %>
+      <span>
+        <%= hall.likes_count %>
+      </span>
+    <% end %>
+  <% else %>
+    <%= button_to user_hall_likes_path(hall), id: "like-button", remote: true do %>
+      <%= image_tag("icon_heart.svg") %>
+      <span>
+        <%= hall.likes_count %>
+      </span>
+    <% end %>
+  <% end %>
+<% else %>
+  <%= image_tag("icon_heart.svg") %>
+    <span>
+      <%= hall.likes_count %>
+    </span>
+<% end %>
+

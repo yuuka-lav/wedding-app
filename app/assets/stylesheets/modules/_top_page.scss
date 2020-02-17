@@ -2,93 +2,147 @@
   box-sizing: border-box;
 }
 
-.header{
-  height: 60px;
-  width: 100%;
-  background-color: rgb(255, 221, 227);
-  display: flex;
-  justify-content: space-between;
-  .left-header{
-    &__title{
-      margin-left: 60px;
-      line-height: 60px;
-      font-size: 29px;
-      display: inline-block;
-      color: rgba(17, 17, 17, 0.582);
-      font-family: cursive;
-    }
-  }
-  .right-header{
-    padding: 0px 20px;
-    box-sizing: border-box;
-    margin: 15px 40px 15px 0px;
-    font-size: 20px;  
-    &__title{
-      a{
-        text-decoration: none;
-        padding: 5px 5px;
-        border: 1px solid rgb(100, 99, 99);
-        color: rgba(27, 27, 27, 0.794);
-      }  
-    }
-  }
-}
-.hall{
-  overflow: auto;
-  .hall__name{
-    margin: 50px 0 5px 150px;
+.choice{
+  height: 50px;
+  .hall{
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid;
+    color: grey;
     font-size: 20px;
     font-family: monospace;
-    font-weight: bold;
-    color: rgba(0, 174, 255, 0.507);
-  }
-  .hall__photo{
-    background-image: image-url("wedding-6.jpg");
-    height: 300px;
-    width: 1000px;
-    margin: auto;
-    
-  }
-  .hall__place{
-    margin-top: 5px;
-    text-align: center;
-    font-size: 15px;
-  }
-  
-  .hall__link{
-    text-align: center;
-    a{
-      color: rgb(66, 83, 238);
-    }
-  }
-}
+    text-decoration: none;
+    border-width: 0 1px 0 1px;
+    background-color:  rgb(255, 221, 227);
+    float: left;
 
-.hall-1{
-  overflow: auto;
-  .hall-1__name{
-    margin: 50px 0 5px 150px;
+  }
+  .dish{
+    height: 50px;
+    width: 285px;
+    text-align: center;
+    line-height: 50px;
+    color: grey;
     font-size: 20px;
     font-family: monospace;
-    font-weight: bold;
-    color: rgba(0, 174, 255, 0.507);
+    text-decoration: none;
+    background-color:  rgb(255, 221, 227);
+    float: left;
   }
-  .hall-1__photo{
-    background-image: image-url("wedding-8.jpg");
-    height: 300px;
-    width: 1000px;
-    margin: auto;
-    
-  }
-  .hall-1__place{
-    margin-top: 5px;
+  .plan{
+    height: 50px;
+    width: 285px;
     text-align: center;
-    font-size: 15px;
+    color: grey;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+    border: 1px solid;
+    background-color: rgb(255, 221, 227);
+    border-width: 0 1px 0 1px;
+    line-height: 50px;
+    float: left;
   }
+  .cake{
+    height: 50px;
+    width: 285px;
+    text-align: center;
+    line-height: 50px;
+    color: grey;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+    background-color: rgb(255, 221, 227);
+    float: left;
+  }
+  .cost{
+    height: 50px;
+    width: 285px;
+    text-align: center;
+    line-height: 50px;
+    color: grey;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+    border: 1px solid;
+    border-width: 0 1px 0 1px;
+    background-color:  rgb(255, 221, 227);
+    float: left;
+  }
+
+}
+.slider {
+  height: 100vh;
+  font-size: 30px;
+  color: gray;
+  font-family: sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vw);
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: scroll;
+}
+.one{
+  background-image: image-url("wedding-photo.jpg");
+  border-right: 1px solid white;
+  padding: 1rem;
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
   
-  .hall-1__link{
-    text-align: center;
-    a{
-      color: rgb(66, 83, 238);
-    }
-  }
+  
+}
+.two{
+  border-right: 1px solid white;
+  padding: 1rem;
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  background-color: rgb(192, 230, 27);
+}
+.three{
+  border-right: 1px solid white;
+  padding: 1rem;
+  height: 100vh;
+  min-width: 100vw;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  background-color: pink;
+}
+.four{
+  border-right: 1px solid white;
+  padding: 1rem;
+  height: 100vh;
+  min-width: 100vw;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  background-color: rgb(20, 160, 32);
+}
+.five{
+  border-right: 1px solid white;
+  padding: 1rem;
+  min-width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+  background-color: rgb(252, 14, 14);
+}
+h1  {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
 }

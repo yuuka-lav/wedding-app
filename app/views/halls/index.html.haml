@@ -6,17 +6,17 @@
     %ul.right-header
       %li.right-header__title
         = link_to edit_user_path(current_user.id) do
-          EDIT  
-  .choice
-    = link_to "式場", halls_path(anchor: "hall"), class: 'hall'
-    = link_to "料理", halls_path(anchor: "dish"), class: 'dish'
-    = link_to "プラン", halls_path(anchor: "plan"), class: 'plan'
-    = link_to "ケーキ", halls_path(anchor: "cake"), class: 'cake'
-    = link_to "費用チェック", halls_path(anchor: "cost"), class: 'cost'
-  .slider
-    %h2.one#hall
-    %h2.two#dish
-    %h2.three#plan
-    %h2.four#cake
-    %h2.five#cost
-
+          EDIT
+.hall
+  - @hall.each do |h| 
+    .hall__name
+      = h.name
+    .hall__image
+      = image_tag h.image
+    .hall__place
+      = h.place
+    .hall__link
+      = link_to top_page_index_path(current_user.id) do
+        詳細をみる
+    
+      = render partial: "likes/like", locals: {halls: @halls, likes: @likes, like: @like}
