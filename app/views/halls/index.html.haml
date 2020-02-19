@@ -8,8 +8,8 @@
         = link_to edit_user_path(current_user.id) do
           EDIT
 .hall
-  - if @hall.present?
-    - @hall.each do |h|
+  - if @halls.present?
+    - @halls.each do |h|
       .hall__name
         = h.name
       .hall__image
@@ -20,7 +20,7 @@
         = link_to top_page_index_path(current_user.id) do
           詳細をみる
     
--# .item-button-container
--#   .item-button-container__left
--#     = render partial: 'likes/like', locals: { hall: @hall, halls: @halls, likes: @likes, like: @like}
+.item-button-container
+  .item-button-container__left
+    = render partial: 'likes/like', locals: { hall: @hall, halls: @halls, likes: @likes, like: @like}
 
