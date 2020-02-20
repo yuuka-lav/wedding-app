@@ -98,13 +98,11 @@
 }
 .two{
   border-right: 1px solid white;
-  padding: 1rem;
   min-width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
-  text-align: center;
   position: relative;
-  background-color: rgb(192, 230, 27);
+  background-color: rgb(255, 255, 255);
 }
 .three{
   border-right: 1px solid white;
@@ -155,9 +153,6 @@ h1  {
   }
 }
 
-// .is-hide {
-//   display: none;
-// }
 #search{
   width:70px;
   height:50px;

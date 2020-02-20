@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.dish{
+  &__picture{
+    background-image: image-url("wedding-8.jpg");
+    height: 300px;
+    
+  }
+  &__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background: #fff6fe;
+    -webkit-font-smoothing: antialiased;
+    &__message{
+      color: #6b4f35;
+      font-size: 30px;
+      font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+      &__text{
+        margin-top: 20px;
+        color: #6b4f35;
+        font-size: 20px;
+        font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+      }
+    }
+  }
+  &__text{
+    font-family: 'IM Fell Double Pica SC', serif;
+    color: #6b4f35;
+    margin-left: 60px;
+    float: left;
+    &__title{
+      font-size: 60px;
+      margin-bottom: 20px;
+      &__message{
+        font-size: 23px;
+      }
+    }
+    &__description{
+      font-size: 16px;
+    }
+  }
+  &__photo{
+    background-image: image-url("dish-5.jpg");
+    margin: 20px 30px 0 0;
+    height: 300px;
+    width: 600px;
+    float: right;
+  }
+  &__maru{
+    float: left;
+    height: 525px;
+    width: 525px;
+    background-image: image-url("dish-1.jpg");
+    margin: 50px 0 0 50px ;
+  }
+  &__two__fish{
+    font-family: 'IM Fell Double Pica SC', serif;
+    color: #6b4f35;
+    margin: 50px 100px 0 0;
+    float: right;
+    text-align: center;
+    &__title{
+      font-size: 60px;
+      margin-bottom: 20px;
+      &__text{
+        font-size: 23px;
+      }
+    }
+    &__message{
+      font-size: 16px;
+    }
+  }
+}
