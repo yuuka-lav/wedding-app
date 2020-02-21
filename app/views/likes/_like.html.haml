@@ -1,20 +1,20 @@
 - if user_signed_in?
-  - if @hall.like_user(current_user.id)
-    .item-button-container__left__dislike
+  - if halls.like_user(current_user.id)
+    .hall__name__dislike
       =link_to user_hall_like_path(current_user, hall, like), method: "DELETE", remote: true do
         %i.fas.fa-heart
         %span いいね！
         %span 
           = h.likes_count
   - else
-    .item-button-container__left__like
+    .hall__name__like
       =link_to user_hall_likes_path(current_user, hall), method: "POST", remote: true do
         %i.fas.fa-heart
         %span いいね！
         %span
           = h.likes_count
 -else
-  .item-button-container__left__like
+  .hall__name__like
     %i.fas.fa-heart
       %span いいね！
       %span 
