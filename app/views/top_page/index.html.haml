@@ -7,9 +7,14 @@
           %h3.left-header__title
             WEDDING PAGE
         %ul.right-header
+          %li.right-header__back
+            = link_to user_halls_path(current_user.id) do
+              = icon("fa", "angle-double-left")
+              戻る
           %li.right-header__title
             = link_to edit_user_path(current_user.id) do
-              EDIT
+              = icon("fa", "cog")
+              編集
       .choice
         = link_to "式場", top_page_index_path(anchor: "hall"), class: 'hall'
         = link_to "料理", top_page_index_path(anchor: "dish"), class: 'dish'
