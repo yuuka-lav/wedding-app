@@ -1,10 +1,21 @@
-.cake__photo{
-  background-image: image-url("cake-1.jpg");
-  height: 400px;
-  width: 650px;
+.cake__space{
+ 
+  height: 200px;
+
 }
 .cake__title{
+  color: #6b4f35;
+  font-size: 50px;
+  font-family: cursive;
+  text-align: center;
   .cake__title__text{
-
+    text-align: center;
+    color: #6b4f35;
+    font-size: 20px;
+    font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
   }
+}
+.cake__photo{
+
+  
 }
