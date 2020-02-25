@@ -4,7 +4,7 @@
 
 .choice{
   height: 50px;
-  .hall{
+  .place{
     height: 50px;
     width: 300px;
     text-align: center;
@@ -85,13 +85,10 @@
   overflow-x: scroll;
 }
 .one{
-  background-image: image-url("wedding-photo.jpg");
   border-right: 1px solid white;
-  padding: 1rem;
   min-width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
-  text-align: center;
   position: relative;
   
   
