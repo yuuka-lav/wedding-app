@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.plan{
+  &__box{
+    border: 1px solid;
+    margin: 0 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    &__title{
+      margin-top: 10px;
+      color: rgb(49, 49, 49);
+      font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+      font-size: 30px;
+    }
+    &__text{
+      font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+      font-size: 20px;
+      color: rgb(255, 148, 148);
+      margin-bottom: 10px;
+
+    }
+    &__photo{
+      background-image: image-url("wedding-3.jpg");
+      height: 370px;
+      width: 810px;
+      margin-left: 145px;
+    }
+    &__show{
+      font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+      font-size: 18px;
+      color: rgb(49, 49, 49);
+      margin: 15px 0;
+    }
+    &__btn{ 
+      border-radius: 10px;
+      border: 1px solid;
+      width:120px;
+      margin: 0 auto;
+      color: rgb(64, 64, 255);
+
+      &__text{
+        padding: 5px 0;
+        font-size: 13px;
+        color: rgb(64, 64, 255);
+      }
+    }
+  }
+}

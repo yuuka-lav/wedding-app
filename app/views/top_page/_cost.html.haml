@@ -1,26 +1,34 @@
+.title
+  費用のチェックをしてみよう
+  .title__text
+    希望に近い方を選んでください
 #page
-  .serchBox
-    %select{:name => "tag"}
+  .serchBox.cp_sl04
+    %select{:name => "tag", :required => ""}
       %option{:value => ""} 人数の選択
       %option{:value => "fifty"} 50人くらい
       %option{:value => "ninety"} 90人くらい
-    %select{:name => "dish"}
+  .serchBox.cp_sl04
+    %select{:name => "dish", :required => ""}
       %option{:value => ""} 料理の選択
       %option{:value => "like"} こだわりたい
       %option{:value => "dislike"} こだわらない
-    %select{:name => "dress"}
+  .serchBox.cp_sl04
+    %select{:name => "dress", :required => ""}
       %option{:value => ""} ドレスの選択
       %option{:value => "like"} こだわりたい
       %option{:value => "dislike"} こだわらない
-    %select{:name => "cake"}
+  .serchBox.cp_sl04
+    %select{:name => "cake", :required => ""}
       %option{:value => ""} ケーキの選択
       %option{:value => "like"} こだわりたい
       %option{:value => "dislike"} こだわらない
-    %select{:name => "flower"}
+  .serchBox.cp_sl04
+    %select{:name => "flower", :required => ""}
       %option{:value => ""} 装花の選択
       %option{:value => "like"} こだわりたい
       %option{:value => "dislike"} こだわらない
-    %button#search 検索
+    %button#search 調べる
   %ul.list
     %li
       %p.tag

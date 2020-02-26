@@ -4,7 +4,7 @@
 
 .dish{
   &__picture{
-    background-image: image-url("wedding-8.jpg");
+    background-image: image-url("dish-8.jpg");
     height: 300px;
     
   }
@@ -30,10 +30,12 @@
     }
   }
   &__text{
-    font-family: 'IM Fell Double Pica SC', serif;
+    font-family: cursive;
     color: #6b4f35;
     margin-left: 60px;
     float: left;
+    font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+
     &__title{
       font-size: 60px;
       margin-bottom: 20px;
@@ -55,15 +57,13 @@
     margin: 15px 0 0 700px ;
   }
   &__two__fish{
-    font-family: 'IM Fell Double Pica SC', serif;
+    font-family: cursive;
     color: #6b4f35;
     margin: 50px 100px 0 0;
     float: right;
     text-align: center;
-<<<<<<< Updated upstream
-=======
     font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
->>>>>>> Stashed changes
+
     &__title{
       font-size: 60px;
       margin-bottom: 20px;

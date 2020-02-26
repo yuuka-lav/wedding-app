@@ -20,8 +20,18 @@
   .right-header{
     padding: 0px 20px;
     box-sizing: border-box;
-    margin: 15px 40px 15px 0px;
-    font-size: 20px;  
+    margin: 15px 20px 15px 0px;
+    font-size: 20px; 
+    display: flex;
+    &__back{
+      a{
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 5px 5px;
+        border: 1px solid rgb(100, 99, 99);
+        color: rgba(27, 27, 27, 0.794);
+      }  
+    }
     &__title{
       a{
         text-decoration: none;
