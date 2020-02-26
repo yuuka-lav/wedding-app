@@ -12,7 +12,6 @@
     - @halls.each do |h|
       .hall__name
         = h.name
-        = render partial: 'likes/like', locals: { halls: @halls, likes: @likes, like: @like}
       .hall__image
         = image_tag h.image
       .hall__place
@@ -20,7 +19,5 @@
       .hall__link
         = link_to top_page_index_path(current_user.id) do
           詳細をみる
--# .item-button-container
--#   .item-button-container__left
--#     = render partial: 'likes/like', locals: { hall: @hall, halls: @halls, likes: @likes, like: @like}
+
 
