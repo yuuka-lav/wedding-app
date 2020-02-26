@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
 }
-
+.chapel__photo{
+  background-image: image-url("place-1.jpg");
+  width: 100vw;
+  height: 350px;
+}
 .message{
   padding: 60px;
   text-align: center;
@@ -10,7 +14,7 @@
   font-size: 30px;
   font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
   height: 300px;
-  margin-top: 70px;
+  margin-top: 10px;
   &__text{
     margin-top: 30px;
     text-align: center;
