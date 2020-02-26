@@ -3,7 +3,7 @@
 }
 
 .message{
-  padding: 80px;
+  padding: 60px;
   text-align: center;
   color: #6b4f35;
   background-color: rgba(255, 235, 157, 0.363);
@@ -12,18 +12,23 @@
   height: 300px;
   margin-bottom: 50px;
   &__text{
+    margin-top: 30px;
     text-align: center;
     color: #6b4f35;
     font-size: 20px;
     font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
-    line-height: 50px;
+    line-height: 30px;
   }
 }
 .weddinghall__name{
+  font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
   margin: 0 auto;
   width: 800px;
-  height: 300px;
+  height: 180px;
+  font-size: 20px;
 }
 .weddinghall__text{
-  
+  text-align: center;
+  margin-left: 55vw;
+  font-size: 15px;
 }
