@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: wedding-app_production
-  username: wedding-app
+  username: root
   password: <%= ENV['WEDDING-APP_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
