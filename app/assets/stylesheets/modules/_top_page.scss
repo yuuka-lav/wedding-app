@@ -4,71 +4,81 @@
 
 .choice{
   height: 50px;
+  
   .place{
     height: 50px;
-    width: 300px;
+    width: 195px;
     text-align: center;
-    line-height: 50px;
-    border: 1px solid;
-    color: grey;
-    font-size: 20px;
+    line-height: 60px;
+    color: rgb(109, 108, 108);
+    font-size: 15px;
     font-family: monospace;
     text-decoration: none;
-    border-width: 0 1px 0 1px;
-    background-color:  rgb(255, 221, 227);
+    border: 1px solid;
+    border-radius: 25px 25px 0 0;
+    border-width: 1px 1px 0 1px;
+    background-color:  rgb(255, 253, 230);
     float: left;
 
   }
   .dish{
     height: 50px;
-    width: 285px;
+    width: 195px;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
     color: grey;
-    font-size: 20px;
+    font-size: 15px;
     font-family: monospace;
     text-decoration: none;
-    background-color:  rgb(255, 221, 227);
+    border: 1px solid;
+    border-radius: 25px 25px 0 0;
+    border-width: 1px 1px 0 1px;
+    background-color:  rgb(255, 241, 244);
     float: left;
   }
   .plan{
     height: 50px;
-    width: 285px;
+    width: 195px;
     text-align: center;
     color: grey;
-    font-size: 20px;
+    font-size: 15px;
     font-family: monospace;
     text-decoration: none;
     border: 1px solid;
-    background-color: rgb(255, 221, 227);
-    border-width: 0 1px 0 1px;
-    line-height: 50px;
+    border-radius: 25px 25px 0 0;
+    border-width: 1px 1px 0 1px;
+    background-color: rgb(235, 249, 251);
+    line-height: 60px;
     float: left;
   }
   .cake{
     height: 50px;
-    width: 285px;
+    width: 195px;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
     color: grey;
-    font-size: 20px;
+    font-size: 15px;
     font-family: monospace;
     text-decoration: none;
-    background-color: rgb(255, 221, 227);
+    border: 1px solid;
+    border-radius: 25px 25px 0 0;
+    border-width: 1px 1px 0 1px;
+    background-color: white;
     float: left;
   }
   .cost{
     height: 50px;
-    width: 285px;
+    width: 200px;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
     color: grey;
-    font-size: 20px;
+    font-size: 15px;
     font-family: monospace;
     text-decoration: none;
     border: 1px solid;
-    border-width: 0 1px 0 1px;
-    background-color:  rgb(255, 221, 227);
+    border-radius: 25px 25px 0 0;
+    border-width: 1px 1px 0 1px;
+    background-color: rgb(243, 232, 255);
     float: left;
   }
 
@@ -108,7 +118,7 @@
   min-width: 100vw;
   scroll-snap-align: start;
   position: relative;
-  background-color: rgb(255, 247, 248);
+  background-color: rgb(235, 249, 251);
 }
 .four{
   border-right: 1px solid white;

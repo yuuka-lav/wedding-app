@@ -3,6 +3,8 @@
 }
 .chapel__photo{
   background-image: image-url("place-1.jpg");
+  background-size: cover;
+  background-position: 50% 0;
   width: 100vw;
   height: 350px;
 }
@@ -26,20 +28,33 @@
 }
 .weddinghall{
   margin: 12vw;
-  &__img__no1{
-    margin-bottom: 20px;
+  .party__1{
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+    &__img__no1{
+    }
   }
-  &__img__no2{
-    margin-bottom: 20px;
-
+  .party__2{
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+    &__img__no2{
+    }
   }
-  &__img__no3{
-    margin-bottom: 20px;
-
+  .party__3{
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+    &__img__no3{
+    }
   }
-  &__img__no4{
-    margin-bottom: 20px;
-
+  .party__4{
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
+    &__img__no4{
+    }
   }
-
-}
+}  
+.resizeimage img { width: 100%; }

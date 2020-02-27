@@ -24,8 +24,9 @@
     &__photo{
       background-image: image-url("wedding-3.jpg");
       height: 370px;
-      width: 810px;
-      margin-left: 145px;
+      max-width: 100%;
+      background-size: cover;
+      background-position: 50% 0;
     }
     &__show{
       font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
