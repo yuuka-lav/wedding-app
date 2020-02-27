@@ -5,6 +5,4 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   validates :name, presence: true
 
-  belongs_to :hall
-  has_many :likes, dependent: :destroy
 end

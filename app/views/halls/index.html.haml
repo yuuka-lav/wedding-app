@@ -4,9 +4,11 @@
       %h3.left-header__title
         WEDDING PAGE
     %ul.right-header
-      %li.right-header__title
-        = link_to edit_user_path(current_user.id) do
-          EDIT
+      %li.right-header__back
+        %li.right-header__title
+          = link_to edit_user_path(current_user.id) do
+            = icon("fa", "cog")
+            編集
 .hall
   - if @halls.present?
     - @halls.each do |h|
