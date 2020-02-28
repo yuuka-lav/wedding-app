@@ -1,7 +1,7 @@
 $(function() {
 	var lists = $('.list li');
 	lists.hide(); // 最初はリストを非表示にする
-	$('#search').on('click', function() {
+	$('#searchs').on('click', function() {
 		lists.show();
 		$('.none').hide();
 		for (var i = 0; i < $('.serchBox select').length; i++) {

@@ -1,24 +1,56 @@
-.hall{
+.search_container {
+  box-sizing: border-box;
+  text-align: center;
+}
+.search_container input[type="text"] {
+  border: 1px solid #999;
+  padding: 3px 5px;
+  border-radius: 20px;
+  height: 2.0em;
+  width: 245px;
+  overflow: hidden;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"] {
+  cursor: pointer;
+  background: none;
+  outline : none;
+  display: inline-block;
+}
+.submit {
+  color: #eb5858;
+  user-select: none;
+  border: 1px #eb5858 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  outline: none;
+  padding: 4px;
+  margin-left: 5px;
+}
+
+.hall {
   overflow: auto;
-  .hall__name{
+  .hall__name {
     margin: 20px 0 5px 150px;
     font-size: 20px;
     font-family: monospace;
     font-weight: bold;
     color: rgba(0, 174, 255, 0.507);
   }
-  .hall__image{
+  .hall__image {
     height: 300px;
     width: 1000px;
     margin: auto;
     
   }
-  .hall__place{
+  .hall__place {
     margin: 5px 0 40px 220px;
     font-size: 15px;
     display: inline-block;
   }
-  .eye{
+  .eye {
     margin-left: 10px;
     display: inline-block;
     font-weight:bold;
@@ -27,11 +59,12 @@
       color: #222;
       font-size: 15px;
     }
-    .fas.fa-eye{
+    .fas.fa-eye {
       margin-right: 60px;
     }
   }
-  .hall__link{
+  
+  .hall__link {
     display: inline-block;
     padding: 0.4em 1.6em;
     font-size: 0.8em;
@@ -43,7 +76,7 @@
     font-weight:bold;
     float: right;
     margin: 5px 220px 0 0;
-    a{
+    a {
       color: #0073b5;
       text-decoration: none;
     }
