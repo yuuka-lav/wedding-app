@@ -18,8 +18,10 @@
         = image_tag h.image
       .hall__place
         = h.place
+      %div.eye
+        %i.fa.fa-eye
+        %span.text6 1000
       .hall__link
         = link_to top_page_index_path(current_user.id) do
-          詳細をみる
-
-
+          詳細をみる →
+      
