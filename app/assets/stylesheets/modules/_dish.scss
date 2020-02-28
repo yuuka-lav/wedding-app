@@ -52,15 +52,16 @@
   
   &__maru{
     height: 300px;
-    width: 600px;
     background-image: image-url("dish-5.jpg");
-    margin: 15px 0 0 700px ;
+    margin: 15px 0 0 500px ;
+    background-position: 50% 50%; /* 画像中央を起点に表示 */
+    background-size: cover; /* 縦横比を維持しながら全体を覆うように表示 */
+    padding: 1em;
   }
-  .resizeimage img { width: 100%; }
   &__two__fish{
     font-family: cursive;
     color: #6b4f35;
-    margin: 50px 100px 0 0;
+    margin: 50px 20px 0 0;
     float: right;
     text-align: center;
     font-family: 'YakuHanMP', YuMincho, "游明朝","ＭＳ Ｐ明朝","MS PMincho", serif;
@@ -83,7 +84,9 @@
     box-sizing: border-box;
     font-size: 0 !important;
     line-height: 0;
+    margin-top: 40px;
   }
+  .resizeimage img { width: 100%; }
   .dishphoto__img {
     display: block;
     width: 700px;
