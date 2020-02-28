@@ -26,20 +26,29 @@
     display: flex;
     &__back{
       a{
+        border-radius: 2px;
+        background:#fba7f0;/*検索ボタンの背景カラー*/ 
+        border:none;/*検索ボタンの枠線を消す*/
+        color:#fff;/*検索ボタンのテキストカラー*/ 
+        font-size:16px;
         text-decoration: none;
         margin-right: 20px;
-        padding: 5px 5px;
-        border: 1px solid rgb(100, 99, 99);
-        color: rgba(27, 27, 27, 0.794);
+        padding: 10px ;
       }  
     }
     &__title{
       a{
+        border-radius: 2px;
+        background:#fba7f0;/*検索ボタンの背景カラー*/ 
+        border:none;/*検索ボタンの枠線を消す*/
+        color:#fff;/*検索ボタンのテキストカラー*/ 
+        font-size:16px;
         text-decoration: none;
-        padding: 5px 5px;
-        border: 1px solid rgb(100, 99, 99);
-        color: rgba(27, 27, 27, 0.794);
+        padding: 10px;
       }  
     }
+    a:hover{
+      color:rgb(73, 75, 83);/*検索ボタンマウスオーバー時のフォントカラー*/ 
+      }
   }
 }
