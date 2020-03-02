@@ -2,13 +2,20 @@
   .header
     .left-header
       %h3.left-header__title
-        WEDDING PAGE
-    %ul.right-header
-      %li.right-header__back
-        %li.right-header__title
-          = link_to edit_user_path(current_user.id) do
-            = icon("fa", "cog")
-            編集
+        = link_to halls_path(current_user.id) do
+          WEDDING PAGE
+    .right-header
+      %ul.menu
+        %li.menu__single
+          %a.init-bottom{:href => "#"} マイページ
+          %ul.menu__second-level
+            %li
+              %a 
+              = link_to edit_user_path(current_user.id) do 
+                編集
+            %li
+              %a
+              = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
             
 = form_tag(halls_path, :method => "get",:class => "search_container") do
   = text_field_tag :search
