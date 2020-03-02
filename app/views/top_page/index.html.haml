@@ -6,16 +6,24 @@
       .header
         .left-header
           %h3.left-header__title
-            WEDDING PAGE
-        %ul.right-header
-          %li.right-header__back
+            = link_to halls_path(current_user.id) do
+              WEDDING PAGE
+        .right-header
+          .right-header__back
             = link_to halls_path(current_user.id) do
               = icon("fa", "angle-double-left")
               戻る
-          %li.right-header__title
-            = link_to edit_user_path(current_user.id) do
-              = icon("fa", "cog")
-              編集
+          %ul.menu
+            %li.menu__single
+              %a.init-bottom{:href => "#"} マイページ
+              %ul.menu__second-level
+                %li
+                  %a 
+                  = link_to edit_user_path(current_user.id) do 
+                    編集
+                %li
+                  %a
+                  = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
       .choice
         = link_to "会場", top_page_index_path(anchor: "place"), class: 'place'
         = link_to "料理", top_page_index_path(anchor: "dish"), class: 'dish'

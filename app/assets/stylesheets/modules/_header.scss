@@ -16,13 +16,18 @@
       display: inline-block;
       color: rgba(17, 17, 17, 0.582);
       font-family: cursive;
+      a{
+        color: rgba(17, 17, 17, 0.582);
+        text-decoration: none;
+
+      }
     }
   }
   .right-header{
     padding: 0px 20px;
     box-sizing: border-box;
     margin: 15px 20px 15px 0px;
-    font-size: 20px; 
+    font-size: 22px; 
     display: flex;
     &__back{
       a{
@@ -50,5 +55,118 @@
     a:hover{
       color:rgb(73, 75, 83);/*検索ボタンマウスオーバー時のフォントカラー*/ 
       }
+  }
+  .menu {
+    position: relative;
+    height: 50px;
+    width: 130px;
+    max-width: 1000px;
+    a{
+      font-size: 15px;
+    }
+    
+  }
+  .init-bottom{
+    border-radius: 2px;
+    background:#fba7f0;/*検索ボタンの背景カラー*/ 
+    border:none;/*検索ボタンの枠線を消す*/
+    color:#fff;/*検索ボタンのテキストカラー*/ 
+    font-size:16px;
+    text-decoration: none;
+    padding: 1px;
+  }
+  
+  .menu > li {
+      height: 35px;
+      line-height: 35px;
+      background: rgb(255, 254, 254);
+  }
+  
+  .menu > li a {
+      display: block;
+      color: #fff;
+  }
+  
+  .menu > li a:hover {
+      color: rgb(255, 255, 255);
+  }
+  
+  .menu__second-level {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    a{
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+  
+  ul.menu__fourth-level {
+      visibility: hidden;
+      opacity: 0;
+  }
+  
+  .menu > li:hover {
+      background: rgb(253, 197, 255);
+      -webkit-transition: all .5s;
+      transition: all .5s;
+  }
+  
+  .menu__second-level li {
+      border-top: 1px solid rgb(255, 236, 249);
+  }
+  
+
+  .menu__second-level li a:hover {
+      background: rgb(255, 203, 255);
+  }
+  
+
+  
+  /* 下矢印 */
+  .init-bottom:after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 0 0 0 15px;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+  
+  /* floatクリア */
+  .menu:before,
+  .menu:after {
+      content: " ";
+      display: table;
+  }
+  
+  .menu:after {
+      clear: both;
+  }
+  
+  .menu {
+      *zoom: 1;
+  }
+  .menu > li.menu__single {
+    position: relative;
+  }
+  
+  li.menu__single ul.menu__second-level {
+      position: absolute;
+      top: 40px;
+      width: 100%;
+      background: rgb(244, 206, 255);
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease;
+  }
+  
+  li.menu__single:hover ul.menu__second-level {
+      top: 50px;
+      visibility: visible;
+      opacity: 1;
   }
 }
