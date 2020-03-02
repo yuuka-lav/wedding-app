@@ -1,0 +1,9 @@
+%div.like-link{id: "like-link-#{hall.id}"}
+  - if current_user.likes.find_by(hall_id: hall.id)
+    = link_to unlike_path(hall.id), method: :delete, remote: true do
+      .btn.btn-default.fa.fa-heart{id: "heart-#{hall.id}"}
+      = hall.likes.count.to_s
+  - else
+    = link_to like_path(hall.id), method: :post, remote: true do
+      .btn.btn-default.fa.fa-heart-empty{id: "heart-#{hall.id}"}
+      = hall.likes.count.to_s
