@@ -8,4 +8,6 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+  post   '/like/:hall_id' => 'likes#like',   as: 'like'
+  delete '/like/:hall_id' => 'likes#unlike', as: 'unlike'
 end

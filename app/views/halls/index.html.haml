@@ -20,7 +20,6 @@
 = form_tag(halls_path, :method => "get",:class => "search_container") do
   = text_field_tag :search
   = submit_tag "検索" ,:name => nil ,class: "submit"
-
 .hall
   - if @halls.present?
     - @halls.each do |h|
@@ -36,3 +35,4 @@
       .hall__link
         = link_to top_page_index_path(current_user.id) do
           詳細をみる →
+= render partial: 'halls/halls', collection: @halls, as: :hall
