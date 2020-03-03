@@ -16,7 +16,6 @@
             %li
               %a
               = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
-            
 = form_tag(halls_path, :method => "get",:class => "search_container") do
   = text_field_tag :search
   = submit_tag "検索" ,:name => nil ,class: "submit"
@@ -29,10 +28,7 @@
         = image_tag h.image
       .hall__place
         = h.place
-      %div.eye
-        %i.fa.fa-eye
-        %span.text6 1000
+        = render partial: 'halls/halls', locals: {hall: h}
       .hall__link
         = link_to top_page_index_path(current_user.id) do
           詳細をみる →
-= render partial: 'halls/halls', collection: @halls, as: :hall
