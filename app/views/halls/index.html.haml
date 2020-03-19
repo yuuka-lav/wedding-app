@@ -16,9 +16,24 @@
             %li
               %a
               = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'
+  
+.ranking
+  .ranking__title
+    %i.fa.fa-heart
+    いいねランキング
+    %i.fa.fa-heart
+  .ranking__name
+    - @all_ranks.each.with_index(1) do |h, i|
+      第
+      = i
+      位
+      .hall__name
+        = h.name
+
 = form_tag(halls_path, :method => "get",:class => "search_container") do
   = text_field_tag :search
   = submit_tag "検索" ,:name => nil ,class: "submit"
+
 .hall
   - if @halls.present?
     - @halls.each do |h|

@@ -7,7 +7,7 @@
   padding: 3px 5px;
   border-radius: 20px;
   height: 2.0em;
-  width: 245px;
+  width: 300px;
   overflow: hidden;
 }
 .search_container input[type="text"]:focus {
@@ -30,6 +30,28 @@
   margin-left: 5px;
 }
 
+.ranking{
+  &__title{
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+    margin-left: 50px;
+  }
+  &__name{
+    margin: 5px 0 15px 50px;
+    color: red;
+    border: 2px gray solid;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  .hall__name {
+    font-size: 15px;
+    font-family: monospace;
+    font-weight: bold;
+    color: rgba(0, 174, 255, 0.507);
+  }
+}
 .hall {
   overflow: auto;
 
@@ -44,26 +66,13 @@
     height: 300px;
     width: 1000px;
     margin: auto;
-    
   }
   .hall__place {
     margin: 5px 0 40px 220px;
     font-size: 15px;
     display: inline-block;
   }
-  .eye {
-    margin-left: 10px;
-    display: inline-block;
-    font-weight:bold;
-    .text6 {
-      font-size: 18px;
-      color: #222;
-      font-size: 15px;
-    }
-    .fas.fa-eye {
-      margin-right: 60px;
-    }
-  }
+
   
   .hall__link {
     display: inline-block;
@@ -86,6 +95,19 @@
     background: #0073b5;
     a{
       color: #fff;
+    }
+  }
+  .botan{
+    display: inline-block;
+  }
+  .like-link{ 
+    display: inline-block;
+    a{
+      text-decoration: none;
+      color: red;
+    }
+    .botan.botan-default:hover{
+      text-decoration: underline;
     }
   }
 }
