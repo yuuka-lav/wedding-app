@@ -62,7 +62,7 @@ gem 'devise'
 gem 'haml-rails'
 gem 'font-awesome-rails'
 gem 'font-awesome-sass'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 group :production do
   gem 'unicorn'
