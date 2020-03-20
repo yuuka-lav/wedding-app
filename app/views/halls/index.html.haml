@@ -40,7 +40,7 @@
       .hall__name
         = h.name
       .hall__image
-        = image_tag h.image
+        = image_tag asset_path(h.image.to_s)
       .hall__place
         = h.place
         = render partial: 'halls/halls', locals: {hall: h}
