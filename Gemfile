@@ -43,6 +43,8 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'pry-rails'
+  gem 'capistrano-rails-console'
 end
 
 group :development do
@@ -63,5 +65,5 @@ gem 'font-awesome-sass'
 gem 'bootstrap-sass', '~> 3.3.6'
 
 group :production do
-  gem 'unicorn', '5.4.1'
+  gem 'unicorn'
 end
