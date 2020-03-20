@@ -3,7 +3,7 @@
 lock '3.12.0'
 
 # Capistranoのログの表示に利用する
-set :application, 'weddind-app'
+set :application, 'wedding-app'
 
 # どのリポジトリからアプリをpullするかを指定する
 set :repo_url,  'git@github.com:yuuka-lav/wedding-app.git'
@@ -25,26 +25,23 @@ set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
 
-# master.key用のシンボリックリンクを追加
-set :linked_files, %w{ config/master.key }
+# secrets.yml用のシンボリックリンクを追加
+set :linked_files, %w{ config/secrets.yml }
 
-# 元々記述されていた after 「'deploy:publishing', 'deploy:restart'」以下を削除して、次のように書き換え
-
+# デプロイ処理が終わった後、Unicornを再起動するための記述
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
-    invoke 'unicorn:stop'
-    invoke 'unicorn:start'
-
+    invoke 'unicorn:restart'
   end
 
-  desc 'upload master.key'
+  desc 'upload secrets.yml'
   task :upload do
     on roles(:app) do |host|
       if test "[ ! -d #{shared_path}/config ]"
         execute "mkdir -p #{shared_path}/config"
       end
-      upload!('config/master.key', "#{shared_path}/config/master.key")
+      upload!('config/secrets.yml', "#{shared_path}/config/secrets.yml")
     end
   end
   before :starting, 'deploy:upload'
