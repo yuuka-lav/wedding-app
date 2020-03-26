@@ -16,18 +16,18 @@ Hall.create!(
   [
     {
       name: '< Wedding大阪 >',
-      plase: '｜ 専門式場 / 大阪府 ｜ 収容人数：20 ~ 120人 |',
+      place: '｜ 専門式場 / 大阪府 ｜ 収容人数：20 ~ 120人 |',
       image: File.open('./app/assets/images/wedding-6.jpg')
     },
     {
       name: '< Wedding難波 >',
-      plase: '｜ ホテル / 大阪府 ｜ 収容人数：80 ~ 200人 |',
-      image: File.open('./app/assets/images/wedding-8.jpg')
+      place: '｜ ホテル / 大阪府 ｜ 収容人数：80 ~ 200人 |',
+      image: File.open('wedding-8.jpg')
     },
     {
       name: '< Wedding埼玉 >',
-      plase: '｜ ホテル / 埼玉県 ｜ 収容人数：100 ~ 180人 |',
-      image: File.open('./app/assets/images/wedding-9.jpg')
+      place: '｜ ホテル / 埼玉県 ｜ 収容人数：100 ~ 180人 |',
+      image: File.open('wedding-9.jpg')
     }
   ]
 )
