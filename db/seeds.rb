@@ -22,7 +22,7 @@ Hall.create!(
     {
       name: '< Wedding難波 >',
       place: '｜ ホテル / 大阪府 ｜ 収容人数：80 ~ 200人 |',
-      image: 'wedding-6.jpg',
+      image: 'wedding-8.jpg',
     },
     {
       name: '< Wedding埼玉 >',
