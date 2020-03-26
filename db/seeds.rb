@@ -17,17 +17,17 @@ Hall.create!(
     {
       name: '< Wedding大阪 >',
       place: '｜ 専門式場 / 大阪府 ｜ 収容人数：20 ~ 120人 |',
-      image: './app/assets/images/wedding-6.jpg',
+      image: 'wedding-6.jpg',
     },
     {
       name: '< Wedding難波 >',
       place: '｜ ホテル / 大阪府 ｜ 収容人数：80 ~ 200人 |',
-      image: './app/assets/images/wedding-6.jpg',
+      image: 'wedding-6.jpg',
     },
     {
       name: '< Wedding埼玉 >',
       place: '｜ ホテル / 埼玉県 ｜ 収容人数：100 ~ 180人 |',
-      image: './app/assets/images/wedding-9.jpg',
+      image: 'wedding-9.jpg',
     }
   ]
 )
