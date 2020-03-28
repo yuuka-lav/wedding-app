@@ -2,7 +2,7 @@
 
 ### **http://52.194.83.62:1214/**  
 
-## 📦 簡単なアプリの説明
+## 📦 アプリの説明
 結婚式場では、お客様側の意見としてはネットで調べても
 実際に行って見積もりを出してもらわないと
 予算がはっきりわからない
@@ -19,9 +19,8 @@
 ３、気に入ったページがあれば詳細をみる をクリック
 
 ４、その式場ごとの情報ページがあり最後のページに『費用チェック』がある
-  <p align="center">
   [![Image from Gyazo](https://i.gyazo.com/51dafe0433f5f53e6eff7e9b96417d6b.jpg)](https://gyazo.com/51dafe0433f5f53e6eff7e9b96417d6b) 
-  </p>
+
 ５、自分のこだわりたいところをこだわるとどのくらいの値段になるのか計算できます。
 
 
@@ -30,7 +29,7 @@
   [![Image from Gyazo](https://i.gyazo.com/2c647729f441aa2aad48b18ebf6bcfd3.jpg)](https://gyazo.com/2c647729f441aa2aad48b18ebf6bcfd3)
 </p>
  
- # 使用技術一覧
+## 使用技術一覧
 
 - Ruby 2.5.1
 - Ruby on Rails 5.0.7.2
