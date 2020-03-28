@@ -15,7 +15,7 @@
 １、アプリにログイン
 
 ２、検索して見たい式場を探す or 一覧から探す
-
+  <img src="https://i.gyazo.com/003f69ebb6ea926654a85b5c26997092.jpg" width="500x500">
 ３、気に入ったページがあれば詳細をみる をクリック
 
 ４、その式場ごとの情報ページがあり最後のページに『費用チェック』がある
@@ -25,9 +25,8 @@
 
 
 ## 
-<p align="center">
-  [![Image from Gyazo](https://i.gyazo.com/2c647729f441aa2aad48b18ebf6bcfd3.jpg)](https://gyazo.com/2c647729f441aa2aad48b18ebf6bcfd3)
-</p>
+[![Image from Gyazo](https://i.gyazo.com/2c647729f441aa2aad48b18ebf6bcfd3.jpg)](https://gyazo.com/2c647729f441aa2aad48b18ebf6bcfd3)
+
  
 ## 使用技術一覧
 
