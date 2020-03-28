@@ -3,6 +3,7 @@
 ### **http://52.194.83.62:1214/**  
 
 ## 📦 アプリの説明
+
 結婚式場では、お客様側の意見としてはネットで調べても
 実際に行って見積もりを出してもらわないと
 予算がはっきりわからない
@@ -36,10 +37,7 @@
  
 ## 作者
 mail to: 070.kotaka.yuuka@mail.com
- 
-## ライセンス
- 
-[MIT](http://Yuukakotaka.mit-license.org)</blockquote>
+## ＊＊https://github.com/yuuka-lav＊＊
 
 
 # DB設計
