@@ -35,12 +35,12 @@
 - Github
  
 ## 作者
-kotaka yuuka
+kotaka yuuka<br>
 mail to: 070.kotaka.yuuka@mail.com
 
 ## ライセンス
 
-[MIT](http://Yuukakotaka.mit-license.org)</blockquote>
+[MIT](https://github.com/yuuka-lav/wedding-app/blob/master/LICENSE)</blockquote>
 
 
 # DB設計
