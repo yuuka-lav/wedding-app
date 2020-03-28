@@ -13,12 +13,12 @@
 ## 💬 使用方法
 
 １、アプリにログイン<br>
-  <img src="https://i.gyazo.com/5d2d10f7775bb52f675a039c5501b066.png" width="600x600">
+  <img src="https://i.gyazo.com/5d2d10f7775bb52f675a039c5501b066.png" width="600x600"><br>
 ２、検索して見たい式場を探す or 一覧から探す<br>
-  <img src="https://i.gyazo.com/003f69ebb6ea926654a85b5c26997092.jpg" width="600x600">
+  <img src="https://i.gyazo.com/003f69ebb6ea926654a85b5c26997092.jpg" width="600x600"><br>
 ３、気に入ったページがあれば詳細をみる をクリック<br>
 ４、その式場ごとの情報ページがあり最後のページに『費用チェック』がある<br>
-  <img src="https://i.gyazo.com/51dafe0433f5f53e6eff7e9b96417d6b.jpg" width="600x600">
+  <img src="https://i.gyazo.com/51dafe0433f5f53e6eff7e9b96417d6b.jpg" width="600x600"><br>
 ５、自分のこだわりたいところをこだわるとどのくらいの値段になるのか計算できます。
 
  
@@ -35,12 +35,11 @@
 - Github
  
 ## 作者
-
 mail to: 070.kotaka.yuuka@mail.com
  
 ## ライセンス
-<!--  
-[MIT](http://TomoakiTANAKA.mit-license.org)</blockquote> -->
+ 
+[MIT](http://Yuukakotaka.mit-license.org)</blockquote>
 
 
 # DB設計
