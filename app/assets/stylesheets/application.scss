@@ -1,6 +1,6 @@
 @import "reset";
 @import "modules/top_page";
-@import "modules/user";
+@import "modules/user.scss";
 @import "modules/flash";
 @import "modules/hall";
 @import "modules/header";
@@ -12,4 +12,4 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap-sprockets";
-@import "bootstrap";
+@import "bootstrap.scss";
